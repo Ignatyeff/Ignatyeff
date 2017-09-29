@@ -5,4 +5,4 @@ $app->initLayout('Centered');
 $button = $app->add('Steam');
 $button->set('Кнопка');
 $button->icon = 'book';
-$button->link(http://store.steampowered.com/)
+$button->link('https://store.steampowered.com/');
