@@ -7,3 +7,4 @@ $button->set('Steam');
 $button->icon = 'shopping bag';
 $button->set(['primary' => true]);
 $button->link('https://store.steampowered.com/');
+$button->color('black');
