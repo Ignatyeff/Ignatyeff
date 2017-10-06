@@ -8,6 +8,14 @@ $Text=$app->add('Text');
 $Text->set('То-то');
 $Message=$app->add('Message');
 $Message->set('Дарова');
+$button = $app->add('Button');
+$button->set('Steam');
+$button->icon = 'shopping bag';
+$button->set(['primary' => true]);
+$img = 'https://www.audi.co.uk/content/dam/audi/production/RestOfSite/ExploreModels/Finance/1x1_finance_calculator.jpg';
+$button = $app->add(['Label', 'hello', 'image'=>$img]);
+$button->set(['massive'=>true]);
+$icon = $app->add(['Image', $img, 'disabled']);
 
 
 
