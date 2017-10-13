@@ -18,7 +18,7 @@ $button->set(['massive'=>true]);
 $icon = $app->add(['Image', $img, 'disabled']);
 $c = $_GET['language'];
 $Text=$app->add('Text');
-$Text->set('RU');
+$Text->set(''.$c);
 
 
 
