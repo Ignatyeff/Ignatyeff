@@ -8,3 +8,5 @@ $button2 = $app->layout->add(['Button', 'BYE']);
 $button2->addClass('black');
 $button3 = $app->layout->add(['Button', 'WHATEWER']);
 $button3->addClass('big orange');
+$button3 = $app->layout->add(['Button', 'LINK TO TXT FILE']);
+$button3->link('my_document.txt');
