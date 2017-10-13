@@ -2,7 +2,62 @@
 require 'vendor/autoload.php';
 $app=new \atk4\ui\App('Registration');
 $app->initLayout('Centered');
-$Label=$app->add('Label');
+$c = $_GET['button'];
+$button=$app->add('Button');
+$button->set(''.$c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*$Label=$app->add('Label');
 $Label->set('Что-то');
 $Text=$app->add('Text');
 $Text->set('То-то');
@@ -18,7 +73,7 @@ $button->set(['massive'=>true]);
 $icon = $app->add(['Image', $img, 'disabled']);
 $c = $_GET['language'];
 $Text=$app->add('Text');
-$Text->set(''.$c);
+$Text->set(''.$c);/*
 
 
 
