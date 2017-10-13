@@ -6,7 +6,7 @@ $button = $app->layout->add(['Button', 'HELLO']);
 $button->addClass('mini');
 $button2 = $app->layout->add(['Button', 'BYE']);
 $button2->addClass('black');
-$button2->link(['index(1)', 'language'=>'ru', 'Country'=>'Russia']);
+$button2->link(['index(1)', 'language'=>'abc', 'Country'=>'Russia']);
 $button3 = $app->layout->add(['Button', 'WHATEVER']);
 $button3->addClass('big orange');
 $button3 = $app->layout->add(['Button', 'LINK TO TXT FILE']);
