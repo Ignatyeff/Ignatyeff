@@ -16,6 +16,10 @@ $img = 'https://www.audi.co.uk/content/dam/audi/production/RestOfSite/ExploreMod
 $button = $app->add(['Label', 'hello', 'image'=>$img]);
 $button->set(['massive'=>true]);
 $icon = $app->add(['Image', $img, 'disabled']);
+$c = $_GET['language'];
+$Text=$app->add('Text');
+$Text->set('RU');
+
 
 
 
