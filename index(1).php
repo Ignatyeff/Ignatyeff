@@ -5,6 +5,7 @@ $app->initLayout('Centered');
 $c = $_GET['number'];
 $button=$app->add('Button');
 $button->set(''.$c);
+$button->addClass('massive red');
 
 
 
