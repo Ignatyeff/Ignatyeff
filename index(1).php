@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 $app=new \atk4\ui\App('Registration');
 $app->initLayout('Centered');
-$c = $_GET['button'];
+$c = $_GET['number'];
 $button=$app->add('Button');
 $button->set(''.$c);
 
