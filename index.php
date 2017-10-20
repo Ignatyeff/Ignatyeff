@@ -15,8 +15,8 @@ if(isset($_GET['max'])) {
     $max=$number;
   }
 } else {
-  $max=1;
-  $min=100;
+  $max=100;
+  $min=1;
   $number=round(($max+$min)/2);
 }
 
