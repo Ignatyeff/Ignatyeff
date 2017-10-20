@@ -30,4 +30,4 @@ $button2 = $app->add(['Button','Да, это мое число!']);
 
 
 $button3 = $app->add(['Button','Меньше!']);
-$button->link(['index', 'max'=>$max, 'min'=>$min, 'less'=>TRUE]);
+$button3->link(['index', 'max'=>$max, 'min'=>$min, 'less'=>TRUE]);
