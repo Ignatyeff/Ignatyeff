@@ -1,32 +1,28 @@
 <?php
 require 'vendor/autoload.php';
-$app=new \atk4\ui\App('Game');
+$app = new \atk4\ui\App('index');
 $app->initLayout('Centered');
-if(isset($_GET['max'])) {
-
+if(isset($_GET['Нет'])){
+if($min==$max){
+$label=$app->add(['Label','УНТЕРМЕНШ']);
+$label->addClass('massive red');  
+}
   $max = $_GET['max'];
   $min = $_GET['min'];
-  $number=round(($max+$min)/2);
-  $label = $app->add(['Label','Твоё число больше '.$number.' ?']);
-  if(isset($_GET['greater'])) {
-    $min=$number;
-  }
-  if(isset($_GET['less'])) {
-    $max=$number;
-  }
-} else {
+  $med=round(($max+$min)/2);
+}else{
   $max=100;
   $min=1;
+  $med=round(($max+$min)/2);
 }
 
+$label=$app ->add(['Label','Твоё число больше'.$med.' ?']);
 
+$button1=$app->add(['Button','ДА']);
+$button1->link(['index(lul)','max'=>$max,'min'=>$med,'Да'=>'null']);
 
+$button2=$app->add(['Button','НЕТ']);
+$button2->link(['index(lul)','max'=>$med,'min'=>$min, 'Нет'=>'null']);
 
-$button = $app->add(['Button','Больше!']);
-$button->link(['index', 'max'=>$max, 'min'=>$min, 'greater'=>TRUE]);
-
-$button2 = $app->add(['Button','Да, это мое число!']);
-
-
-$button3 = $app->add(['Button','Меньше!']);
-$button3->link(['index', 'max'=>$max, 'min'=>$min, 'less'=>TRUE]);
+$button3=$app->add(['Button','О ДА']);
+$button3->link(['pustoj','med'=>$med]);
