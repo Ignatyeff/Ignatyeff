@@ -2,11 +2,7 @@
 require 'vendor/autoload.php';
 $app = new \atk4\ui\App('index');
 $app->initLayout('Centered');
-if(isset($_GET['Нет'])){
-if($max==$min=1){
-$label=$app->add(['Label','УНТЕРМЕНШ']);
-$label->addClass('massive red');
-}
+if(isset($_GET['max'])){
   $max = $_GET['max'];
   $min = $_GET['min'];
   $med=round(($max+$min)/2);
@@ -15,7 +11,11 @@ $label->addClass('massive red');
   $min=1;
   $med=round(($max+$min)/2);
 }
-
+if(isset($_GET['Нет'])){
+if($max==$min=1){
+$label=$app->add(['Label','УНТЕРМЕНШ']);
+$label->addClass('massive red');
+}
 $label=$app ->add(['Label','Твоё число больше'.$med.' ?']);
 
 $button1=$app->add(['Button','ДА']);
