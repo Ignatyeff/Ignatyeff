@@ -11,7 +11,7 @@ if(isset($_GET['max'])){
   $min=1;
   $med=round(($max+$min)/2);
 }
-if(isset($_GET['Нет'])){
+if(isset($_GET['net'])){
 if($max==$min=1){
 $label=$app->add(['Label','УНТЕРМЕНШ']);
 $label->addClass('massive red');
