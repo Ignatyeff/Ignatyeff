@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 $app = new \atk4\ui\App('index');
 $app->initLayout('Centered');
 if(isset($_GET['Нет'])){
-if($min==$max){
+if($max==$min=1){
 $label=$app->add(['Label','УНТЕРМЕНШ']);
 $label->addClass('massive red');
 }
