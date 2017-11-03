@@ -19,10 +19,10 @@ $label->addClass('massive red');
 $label=$app ->add(['Label','Твоё число больше'.$med.' ?']);
 
 $button1=$app->add(['Button','ДА']);
-$button1->link(['index(lul)','max'=>$max,'min'=>$med,'Да'=>'null']);
+$button1->link(['index(lul)','max'=>$max,'min'=>$med,'net'=>'null']);
 
 $button2=$app->add(['Button','НЕТ']);
-$button2->link(['index(lul)','max'=>$med,'min'=>$min, 'Нет'=>'null']);
+$button2->link(['index(lul)','max'=>$med,'min'=>$min, 'net'=>'null']);
 
 $button3=$app->add(['Button','О ДА']);
 $button3->link(['pustoj','med'=>$med]);
