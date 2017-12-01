@@ -1,0 +1,22 @@
+<?php
+require 'vendor/autoload.php';
+$app = new \atk4\ui\App('index');
+$app->initLayout('Centered');
+session_start();
+$name=$_SESSION['name'];
+$surname=$_SESSION['surname'];
+$phone_number=$_SESSION['phone_number'];
+$email=$_SESSION['email'];
+$notes=$_SESSION['notes'];
+$label=$app->add(['Label','Darova ebat ']);
+$label->addClass('massive');
+$label=$app->add(['Label', "твоё имя " .$name]);
+$label->addClass('massive');
+$label=$app->add(['Label', "твоя фамилия " .$surname]);
+$label->addClass('massive');
+$label=$app->add(['Label', "Твой номер телефона " .$phone_number]);
+$label->addClass('massive');
+$label=$app->add(['Label', "Твой email " .$email]);
+$label->addClass('massive');
+$label=$app->add(['Label', "Твои заметки " .$notes]);
+$label->addClass('massive');
